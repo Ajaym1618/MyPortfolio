@@ -1,0 +1,94 @@
+.about{
+    background-image: url(../../assets/Reversed-blue.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1150px){
+    .rightAbout h1{
+        font-weight: 800;
+        font-size: 25px;
+    }
+    .rightAbout p{
+        line-height: 30px;
+    }
+    .para{
+        font-size: 16px;
+    }
+    .download,.view{
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    .leftAbout{
+        width: 30%;
+    }
+    .outerAboutSquare{
+        background-color: transparent;
+    }
+    .rightAbout{
+        width: 70%;
+    }   
+}
+
+@media only screen and (max-width: 628px){
+    .rightAbout h1{
+        font-size: 20px;
+    }
+    .para{
+        font-size: 14px;
+    }
+    .download,.view{
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 538px){
+    .outerAboutSquare{
+        width: 250px;
+        height: 250px;
+    }
+    .innerAboutSquare{
+        width: 200px;
+        height: 200px;
+    }
+    .para{
+        font-size: 12px;
+    }
+    .download,.view{
+        padding: 6px;
+        font-size: 10px;
+    }
+    .rightAbout p{
+        line-height: 20px;
+    } 
+}
+
+@media only screen and (max-width: 407px){
+    .about{
+        display: block;
+        height: 55vh;
+        font-weight: 600;
+    }
+    .leftAbout{
+    display: none;
+    }
+    .outerAboutSquare{
+        background-color: #c2ebfe;
+
+    }
+
+    .rightAbout{
+        justify-content: flex-start;
+        width: 100%;
+        padding: 10px;
+        height: 50vh;
+    }  
+   
+}
+

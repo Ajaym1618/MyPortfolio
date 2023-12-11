@@ -1,0 +1,20 @@
+
+.sidebar{
+    background-image: url(../.././assets/paleblue-leaves-petals.avif);
+    background-repeat: no-repeat;
+    background-size: 305px 618px;
+    background-position: center;
+    background-attachment: center;
+}
+
+@media only screen and (max-width:780px){
+    .nav{
+        display: none;
+    }
+    .menuBar{
+        display: flex;
+    }
+    .sidebar{
+        display: inline-block;
+    }
+} 
