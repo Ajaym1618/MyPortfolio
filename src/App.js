@@ -15,8 +15,8 @@ function App() {
     </div>
     <About/>
     <Skill/>
-    <Project/>
     <Education/>
+    <Project/>
     </>
   );
 }

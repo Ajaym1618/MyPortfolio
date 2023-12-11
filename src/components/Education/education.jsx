@@ -1,16 +1,46 @@
 import React from "react";
 import './education.css';
+import arunachala from '../../assets/arunachala-school.avif'
+import bapuji from '../../assets/babuji-school.avif'
+import amrita from '../../assets/amrita-college.JPG'
 
 const Education = () =>{
 
 
     return(
-        <div className="w-full h-[100vh] education">
+        <div className="w-full h-[90vh] education">
             <h1 className="text-[40px] text-[#008bc6] font-semibold inline-block border-b-2 ml-8 border-[#008bc6]">Education</h1>
-            <div className="">
-                <div className=""></div>
-                <div className=""></div>
-                <div className=""></div>
+            <div className="w-full h-[80vh] flex flex-wrap items-center justify-around p-10">
+                <div className="w-[420px] h-[60vh] bg-[#ffffffc0] rounded-lg overflow-hidden hover:scale-110 hover: transition-all hover: ease-in-out shadow-xl shadow-zinc-700">
+                    <img src={arunachala} className="w-[100%] h-[250px]"/>
+                    <h2 className="font-semibold text-xl text-center pt-2 pb-4">Arunachala matric higher secondary school</h2>
+                    <ul className="list-disc list-inside pl-8">
+                        <li className="text-[17px] font-semibold">SSLC (10 std)</li>
+                        <li className="text-[17px] font-semibold">Graduate: 2017</li>
+                        <li className="text-[17px] font-semibold">Percentage: 88%</li>
+                        <span className="font-semibold"><i className="fa-solid fa-location-dot pr-2 "></i>Manavilai Vellichanthai, Nagercoil.</span>
+                    </ul>
+                </div>
+                <div className="w-[420px] h-[60vh] bg-[#ffffffc0] rounded-lg overflow-hidden hover:scale-110 hover: transition-all hover: ease-in-out shadow-xl shadow-zinc-700">
+                    <img src={bapuji} className="w-[100%] h-[250px]"/>
+                    <h2 className="font-semibold text-xl text-center pt-2 pb-4">Bapuji Memorial Higher Secondary School</h2>
+                    <ul className="list-disc list-inside pl-8">
+                        <li className="text-[17px] font-semibold">HSC (12 std)</li>
+                        <li className="text-[17px] font-semibold">Graduate: 2019</li>
+                        <li className="text-[17px] font-semibold">Percentage: 67%</li>
+                        <span className="font-semibold"><i className="fa-solid fa-location-dot pr-2 "></i> Chinnavilai Manavalakurichi.</span>
+                    </ul>
+                </div>
+                <div className="w-[420px] h-[60vh] bg-[#ffffffc0] rounded-lg overflow-hidden hover:scale-110 hover: transition-all hover: ease-in-out shadow-xl shadow-zinc-700">
+                    <img src={amrita} className="w-[100%] h-[250px]"/>
+                    <h2 className="font-semibold text-xl text-center pt-2 pb-4">Amrita College of Engineering and Technology</h2>
+                    <ul className="list-disc list-inside pl-8">
+                        <li className="text-[17px] font-semibold">BE Computer Science and Engineering</li>
+                        <li className="text-[17px] font-semibold">Graduate: 2023</li>
+                        <li className="text-[17px] font-semibold">CGPA: 77%</li>
+                        <span className="font-semibold"><i className="fa-solid fa-location-dot pr-2 "></i>Erachakulam, Nagercoil.</span>
+                    </ul>
+                </div>
             </div>
         </div>
     )
