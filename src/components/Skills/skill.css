@@ -15,10 +15,8 @@
 @media only screen and (max-width: 695px){
     .skill h1{
         font-size: 25px;
-        color: rgb(57, 57, 167);
         margin: 0;
         text-align: center;
-        border-color: rgb(57, 57, 167);;
     }
     .skill-part{
         grid-template-columns: 1fr;

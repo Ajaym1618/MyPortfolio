@@ -8,10 +8,10 @@ const Education = () =>{
 
 
     return(
-        <div className="w-full h-[90vh] education">
+        <div className="w-full h-[90vh] education ">
             <h1 className="text-[40px] text-[#008bc6] font-semibold inline-block border-b-2 ml-8 border-[#008bc6]">Education</h1>
-            <div className="w-full h-[80vh] flex flex-wrap items-center justify-around p-10">
-                <div className="w-[420px] h-[60vh] bg-[#ffffffc0] rounded-lg overflow-hidden hover:scale-110 hover: transition-all hover: ease-in-out shadow-xl shadow-zinc-700">
+            <div className="w-full h-[80vh] flex flex-wrap items-center justify-around gap-8 p-10 edu">
+                <div className="w-[420px] h-[60vh] bg-[#ffffffc0] rounded-lg overflow-hidden hover:scale-110 hover: transition-all hover: ease-in-out shadow-xl shadow-zinc-700 ">
                     <img src={arunachala} className="w-[100%] h-[250px]"/>
                     <h2 className="font-semibold text-xl text-center pt-2 pb-4">Arunachala matric higher secondary school</h2>
                     <ul className="list-disc list-inside pl-8">
@@ -21,9 +21,9 @@ const Education = () =>{
                         <span className="font-semibold"><i className="fa-solid fa-location-dot pr-2 "></i>Manavilai Vellichanthai, Nagercoil.</span>
                     </ul>
                 </div>
-                <div className="w-[420px] h-[60vh] bg-[#ffffffc0] rounded-lg overflow-hidden hover:scale-110 hover: transition-all hover: ease-in-out shadow-xl shadow-zinc-700">
+                <div className="w-[420px] h-[60vh] bg-[#ffffffc0] rounded-lg overflow-hidden hover:scale-110 hover: transition-all hover: ease-in-out shadow-xl shadow-zinc-700 ">
                     <img src={bapuji} className="w-[100%] h-[250px]"/>
-                    <h2 className="font-semibold text-xl text-center pt-2 pb-4">Bapuji Memorial Higher Secondary School</h2>
+                    <h2 className="font-semibold text-xl text-center pt-2 pb-4">Bapuji memorial higher secondary school</h2>
                     <ul className="list-disc list-inside pl-8">
                         <li className="text-[17px] font-semibold">HSC (12 std)</li>
                         <li className="text-[17px] font-semibold">Graduate: 2019</li>
@@ -31,7 +31,7 @@ const Education = () =>{
                         <span className="font-semibold"><i className="fa-solid fa-location-dot pr-2 "></i> Chinnavilai Manavalakurichi.</span>
                     </ul>
                 </div>
-                <div className="w-[420px] h-[60vh] bg-[#ffffffc0] rounded-lg overflow-hidden hover:scale-110 hover: transition-all hover: ease-in-out shadow-xl shadow-zinc-700">
+                <div className="w-[420px] h-[60vh] bg-[#ffffffc0] rounded-lg overflow-hidden hover:scale-110 hover: transition-all hover: ease-in-out shadow-xl shadow-zinc-700 ">
                     <img src={amrita} className="w-[100%] h-[250px]"/>
                     <h2 className="font-semibold text-xl text-center pt-2 pb-4">Amrita College of Engineering and Technology</h2>
                     <ul className="list-disc list-inside pl-8">
