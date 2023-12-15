@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.e9b3097a.css",
-    "main.js": "/MyPortfolio/static/js/main.1290194d.js",
+    "main.css": "/MyPortfolio/static/css/main.1f235682.css",
+    "main.js": "/MyPortfolio/static/js/main.6bb1b8d7.js",
     "static/js/787.abd8d82a.chunk.js": "/MyPortfolio/static/js/787.abd8d82a.chunk.js",
     "static/media/j.jpg": "/MyPortfolio/static/media/j.e3041265651fa9fd5241.jpg",
     "static/media/blue.jpg": "/MyPortfolio/static/media/blue.96cc2592de42519d9ce4.jpg",
@@ -22,20 +22,25 @@
     "static/media/amrita-college.JPG": "/MyPortfolio/static/media/amrita-college.57b05375c7938d434dbe.JPG",
     "static/media/cycle-2.png": "/MyPortfolio/static/media/cycle-2.5898618839851129c494.png",
     "static/media/for_portfolio__1_-removebg-preview.png": "/MyPortfolio/static/media/for_portfolio__1_-removebg-preview.a39156ffd02b31344ab1.png",
+    "static/media/illus-removebg-preview.png": "/MyPortfolio/static/media/illus-removebg-preview.6a6db94d2abb6261fa74.png",
     "static/media/me.png": "/MyPortfolio/static/media/me.e265d17fa008f1f18b63.png",
+    "static/media/for-portfolio.png": "/MyPortfolio/static/media/for-portfolio.6fa9c29ec119673c238e.png",
     "static/media/arunachala-school.avif": "/MyPortfolio/static/media/arunachala-school.3a66af5ca8c8cdcb6bb5.avif",
+    "static/media/cookies-3.png": "/MyPortfolio/static/media/cookies-3.0a7f3bcdd577454f7118.png",
+    "static/media/cookies-2.png": "/MyPortfolio/static/media/cookies-2.4f94c19c68184f0567d8.png",
     "static/media/Ajay.M__RESUME.pdf": "/MyPortfolio/static/media/Ajay.M__RESUME.addad6c688d3748ae578.pdf",
     "static/media/babuji-school.avif": "/MyPortfolio/static/media/babuji-school.dc32f431072663d621dd.avif",
+    "static/media/cookies-1.png": "/MyPortfolio/static/media/cookies-1.6a13f25d724ea9445f9c.png",
     "static/media/python-logo.png": "/MyPortfolio/static/media/python-logo.689ac22d714b9deac0f9.png",
     "static/media/blue-background-edu.avif": "/MyPortfolio/static/media/blue-background-edu.d62dfaf1238009174cf4.avif",
     "static/media/paleblue-leaves-petals.avif": "/MyPortfolio/static/media/paleblue-leaves-petals.9464f09c9aba5f03bbf9.avif",
     "index.html": "/MyPortfolio/index.html",
-    "main.e9b3097a.css.map": "/MyPortfolio/static/css/main.e9b3097a.css.map",
-    "main.1290194d.js.map": "/MyPortfolio/static/js/main.1290194d.js.map",
+    "main.1f235682.css.map": "/MyPortfolio/static/css/main.1f235682.css.map",
+    "main.6bb1b8d7.js.map": "/MyPortfolio/static/js/main.6bb1b8d7.js.map",
     "787.abd8d82a.chunk.js.map": "/MyPortfolio/static/js/787.abd8d82a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9b3097a.css",
-    "static/js/main.1290194d.js"
+    "static/css/main.1f235682.css",
+    "static/js/main.6bb1b8d7.js"
   ]
 }
