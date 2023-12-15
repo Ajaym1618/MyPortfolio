@@ -1,8 +1,8 @@
 
 .sidebar{
-    background-image: url(../.././assets/paleblue-leaves-petals.avif);
+    background-image:url(../.././assets/paleblue-leaves-petals.avif);
     background-repeat: no-repeat;
-    background-size: 305px 618px;
+    background-size: 320px 618px;
     background-position: center;
     background-attachment: center;
 }

@@ -24,3 +24,9 @@
         height: auto;
     }
 }
+
+@media only screen and (max-width: 350px){
+    .education h1{
+        font-size: 25px;
+    }
+}

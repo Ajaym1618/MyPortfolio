@@ -46,7 +46,7 @@ const About = () => {
                 Through the synergy of code, creativity, and functionality, I thrive at the crossroads of technology and visual aesthetics.</p>
                 <div className="flex">
                     <button className="mt-6 bg-[#008bc6] px-[15px] py-[10px] font-semibold text-[18px] text-white mr-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#008bc6] duration-300 download" onClick={downloadPDF}> Download CV</button>
-                    <button className="mt-6 bg-[#008bc6] px-[15px] py-[10px] font-semibold text-[18px] text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#008bc6] duration-300 view"><a href={resumee}>View CV</a> </button>
+                    <button className="mt-6 bg-[#008bc6] px-[15px] py-[10px] font-semibold text-[18px] text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#008bc6] duration-300 view"><a href={resumee} target="_blank">View CV</a> </button>
                 </div>
             </div>
         </div>
