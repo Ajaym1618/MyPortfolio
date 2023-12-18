@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.1f235682.css",
-    "main.js": "/MyPortfolio/static/js/main.6bb1b8d7.js",
+    "main.css": "/MyPortfolio/static/css/main.7c81b0e4.css",
+    "main.js": "/MyPortfolio/static/js/main.fae2c774.js",
     "static/js/787.abd8d82a.chunk.js": "/MyPortfolio/static/js/787.abd8d82a.chunk.js",
-    "static/media/j.jpg": "/MyPortfolio/static/media/j.e3041265651fa9fd5241.jpg",
     "static/media/blue.jpg": "/MyPortfolio/static/media/blue.96cc2592de42519d9ce4.jpg",
     "static/media/cycle-1.png": "/MyPortfolio/static/media/cycle-1.caf9398aaf386efe7079.png",
     "static/media/rm222batch2-mind-03.jpg": "/MyPortfolio/static/media/rm222batch2-mind-03.e69d5c1e84b764d2302c.jpg",
@@ -17,6 +16,7 @@
     "static/media/Page-2.png": "/MyPortfolio/static/media/Page-2.bd29db7949b50cafee6c.png",
     "static/media/Page-4.png": "/MyPortfolio/static/media/Page-4.b8124c17f5c1f1875ab2.png",
     "static/media/cycle-5.png": "/MyPortfolio/static/media/cycle-5.3f7b12c84fe3b3f038fa.png",
+    "static/media/Education.avif": "/MyPortfolio/static/media/Education.3fcbe59f69dcccf42f74.avif",
     "static/media/cycle-7.png": "/MyPortfolio/static/media/cycle-7.f63dfcbd3aa32adce34c.png",
     "static/media/cycle-3.png": "/MyPortfolio/static/media/cycle-3.e30cdee72b81a3514f70.png",
     "static/media/amrita-college.JPG": "/MyPortfolio/static/media/amrita-college.57b05375c7938d434dbe.JPG",
@@ -35,12 +35,12 @@
     "static/media/blue-background-edu.avif": "/MyPortfolio/static/media/blue-background-edu.d62dfaf1238009174cf4.avif",
     "static/media/paleblue-leaves-petals.avif": "/MyPortfolio/static/media/paleblue-leaves-petals.9464f09c9aba5f03bbf9.avif",
     "index.html": "/MyPortfolio/index.html",
-    "main.1f235682.css.map": "/MyPortfolio/static/css/main.1f235682.css.map",
-    "main.6bb1b8d7.js.map": "/MyPortfolio/static/js/main.6bb1b8d7.js.map",
+    "main.7c81b0e4.css.map": "/MyPortfolio/static/css/main.7c81b0e4.css.map",
+    "main.fae2c774.js.map": "/MyPortfolio/static/js/main.fae2c774.js.map",
     "787.abd8d82a.chunk.js.map": "/MyPortfolio/static/js/787.abd8d82a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f235682.css",
-    "static/js/main.6bb1b8d7.js"
+    "static/css/main.7c81b0e4.css",
+    "static/js/main.fae2c774.js"
   ]
 }
