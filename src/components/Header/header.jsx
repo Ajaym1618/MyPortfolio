@@ -49,11 +49,11 @@ function Header() {
 
   return (
     <>
-      <div className={`w-[100%] h-[15vh] flex justify-between items-center px-[50px] border-b-2 bg-[#ffffff] fixed top-0 z-50 transition-transform duration-800 ease-in-out ${isScrolled || orNot ? 'hidden' : 'block'}`}>
+      <div className={`w-[100%] h-[15vh] bg- flex justify-between items-center px-[50px] border-b-2 bg-[#eef8fb] fixed top-0 z-50 transition-transform duration-800 ease-in-out  ${isScrolled ? 'hidden' : 'block'} `}>
         <div className="logo">
           <h1 className="text-[#008bc6] text-3xl font-semibold">MyFolio</h1>
         </div>
-        <nav className="nav">
+        <nav className={`nav ${orNot ? 'hidden' : 'block'}`} >
           <ul className=" flex justify-center items-center">
             <li className="inline-block ">
               <a href="#" className="mr-[60px] text-[18px] font-bold text-[#008bc6] hover:text-black">
@@ -91,7 +91,7 @@ function Header() {
       {orNot === true ? (
         <div className={`w-[320px] h-full right-0  z-50 fixed ${orNot ? 'fade-in' : 'fade-out'} border-2 hidden sidebar `}>
           <div className="w-full flex flex-col items-center justify-center mt-4">
-            <div className=" w-[100px] h-[100px] flex bg-[#008bc6] items-center justify-center rounded-[50px] overflow-hidden">
+            <div className=" w-[100px] h-[100px] flex bg-[#4ac1eb] items-center justify-center rounded-[50px] overflow-hidden">
               <img src={id} className="w-[100px]" />
             </div>
             <h1 className="text-[18px] pt-1 font-semibold">Ajay.M</h1>

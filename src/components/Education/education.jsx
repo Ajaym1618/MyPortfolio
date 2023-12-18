@@ -6,9 +6,8 @@ import amrita from '../../assets/amrita-college.JPG'
 
 const Education = () =>{
 
-
     return(
-        <div className="w-full h-[90vh] education ">
+        <div className={`w-full h-[90vh] education`} >
             <h1 className="text-[40px] text-[#008bc6] font-semibold inline-block border-b-2 ml-16 border-[#008bc6]">Education</h1>
             <div className="w-full h-[80vh] flex flex-wrap items-center justify-around gap-8 p-10  edu">
                 <div className="w-[420px] h-[60vh] bg-[#ffffffc0] rounded-lg overflow-hidden hover:scale-110 hover: transition-all hover: ease-in-out shadow-xl shadow-zinc-700 ">

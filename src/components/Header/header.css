@@ -2,7 +2,7 @@
 .sidebar{
     background-image:url(../.././assets/paleblue-leaves-petals.avif);
     background-repeat: no-repeat;
-    background-size: 320px 618px;
+    background-size: cover;
     background-position: center;
     background-attachment: center;
 }
@@ -18,3 +18,4 @@
         display: inline-block;
     }
 } 
+/* 320px 618px */
