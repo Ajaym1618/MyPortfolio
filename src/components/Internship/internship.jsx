@@ -4,7 +4,7 @@ import illus from "../../assets/illus-removebg-preview.png";
 
 const Internship = () => {
   return (
-    <div className="w-full h-auto p-10 intern">
+    <div className="w-full h-auto p-10 border-t-4 border-[white] rounded-2xl intern">
       <h1 className=" text-[#008bc6] border-b-2 ml-6 inline-block border-[#008bc6] text-[40px] font-semibold ">
         Internship
       </h1>

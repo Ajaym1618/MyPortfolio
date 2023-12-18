@@ -1,5 +1,7 @@
 .intern{
-    background-image: url(../../assets/rm222batch2-mind-03.jpg);
+    /* background-image: url(../../assets/rm222batch2-mind-03.jpg); */
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(109,213,250,1) 100%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

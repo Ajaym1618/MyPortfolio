@@ -49,7 +49,7 @@ function Header() {
 
   return (
     <>
-      <div className={`w-[100%] h-[15vh] bg- flex justify-between items-center px-[50px] border-b-2 bg-[#eef8fb] fixed top-0 z-50 transition-transform duration-800 ease-in-out  ${isScrolled ? 'hidden' : 'block'} `}>
+      <div className={`w-[100%] h-[15vh] bg-[#eef8fc] flex justify-between items-center px-[50px] shadow-lg shadow-[#c2ebfe] fixed top-0 z-50 transition-transform duration-800 ease-in-out  ${isScrolled ? 'hidden' : 'block'} `}>
         <div className="logo">
           <h1 className="text-[#008bc6] text-3xl font-semibold">MyFolio</h1>
         </div>

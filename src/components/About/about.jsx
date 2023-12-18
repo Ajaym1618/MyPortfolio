@@ -30,7 +30,7 @@ const About = () => {
         document.body.removeChild(link);
     }
     return(
-        <div className="w-[100%] h-[90vh] flex about">
+        <div className="w-[100%] h-[90vh] flex mb-6 rounded-b-2xl about">
             <div className="w-[40%] h-[90vh] flex justify-center items-center rotate-[43deg] leftAbout">
                 <div className="w-[300px] h-[300px] bg-[#c2ebfe] relative outerAboutSquare">
                     <div className=" w-[250px] h-[250px] overflow-hidden bg-[#4ac1eb] absolute top-[50px] left-[0px] innerAboutSquare">

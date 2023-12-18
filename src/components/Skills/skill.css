@@ -1,9 +1,12 @@
 .skill{
-    background-image: url(../../assets/rm222batch2-mind-03.jpg);
+    /* background-image: url(../../assets/rm222batch2-mind-03.jpg); */
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(109,213,250,1) 0%, rgba(255,255,255,1) 100%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment:fixed;
+    
+    /* background-attachment:fixed; */
 }
 
 @media only screen and (max-width:1025px){

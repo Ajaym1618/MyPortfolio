@@ -54,7 +54,7 @@ const Project = () => {
   };
 
   return (
-    <div className="w-full h-[100vh] px-[10px] project ">
+    <div className="w-full h-[100vh] px-[10px]  rounded-2xl project ">
       <h1 className="text-[#008bc6] inline-block text-[40px] font-semibold border-b-[2px] pt-[30px] border-[#008bc6] ml-[150px] pro">
         Projects
       </h1>
