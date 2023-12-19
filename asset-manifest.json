@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.c5df9ef5.css",
-    "main.js": "/MyPortfolio/static/js/main.2056c70f.js",
+    "main.css": "/MyPortfolio/static/css/main.4adb8a11.css",
+    "main.js": "/MyPortfolio/static/js/main.b8d18faa.js",
     "static/js/787.abd8d82a.chunk.js": "/MyPortfolio/static/js/787.abd8d82a.chunk.js",
     "static/media/blue.jpg": "/MyPortfolio/static/media/blue.96cc2592de42519d9ce4.jpg",
     "static/media/cycle-1.png": "/MyPortfolio/static/media/cycle-1.caf9398aaf386efe7079.png",
@@ -32,12 +32,12 @@
     "static/media/python-logo.png": "/MyPortfolio/static/media/python-logo.689ac22d714b9deac0f9.png",
     "static/media/paleblue-leaves-petals.avif": "/MyPortfolio/static/media/paleblue-leaves-petals.9464f09c9aba5f03bbf9.avif",
     "index.html": "/MyPortfolio/index.html",
-    "main.c5df9ef5.css.map": "/MyPortfolio/static/css/main.c5df9ef5.css.map",
-    "main.2056c70f.js.map": "/MyPortfolio/static/js/main.2056c70f.js.map",
+    "main.4adb8a11.css.map": "/MyPortfolio/static/css/main.4adb8a11.css.map",
+    "main.b8d18faa.js.map": "/MyPortfolio/static/js/main.b8d18faa.js.map",
     "787.abd8d82a.chunk.js.map": "/MyPortfolio/static/js/787.abd8d82a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5df9ef5.css",
-    "static/js/main.2056c70f.js"
+    "static/css/main.4adb8a11.css",
+    "static/js/main.b8d18faa.js"
   ]
 }
