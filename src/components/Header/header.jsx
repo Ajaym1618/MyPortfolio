@@ -1,7 +1,7 @@
 import "../Header/header.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import resumee from "../../assets/Ajay.M__RESUME.pdf";
+import resumee from "../../assets/Ajay.M__Resume.pdf";
 import id from "../../assets/for-portfolio.png";
 
 function Header() {
