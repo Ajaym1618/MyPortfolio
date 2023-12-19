@@ -127,7 +127,7 @@ function Header() {
                 target="_blank"
                 className="text-[#008bc6] text-[35px]  px-[10px] py-[6px] rounded-[5px] hover:text-black active:text-green-600"
               >
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github"></i>
               </a>
             </li>
           </ul>
@@ -223,7 +223,7 @@ function Header() {
       ) : null}
       {showArrow && (
         <Link to="Home" spy={true} smooth={true} offset={-150} duration={200} title="top">
-            <span className=" text-[18px] fixed right-4 bottom-6 z-50 text-white bg-[#008bc6] animate-bounce shadow-md shadow-[1px_1px_38px_4px_#008bc6] flex justify-center items-center w-8 h-8 rounded-3xl max-md:right-2">
+            <span className=" text-[18px] fixed right-4 bottom-6 z-50 text-white bg-[#008bc6]  shadow-md shadow-[1px_1px_38px_4px_rgba(0, 139, 198,1)] flex justify-center items-center w-8 h-8 rounded-3xl max-md:right-2 cursor-pointer animate-bounce">
             <i className="fa-solid fa-arrow-up text-[18px]"></i>
             </span>
         </Link>

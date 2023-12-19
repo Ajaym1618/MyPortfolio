@@ -37,7 +37,7 @@ const Skill = () => {
           </p>
         </div>
         <div className="w-[100%] h-[250px]  flex flex-col justify-center items-center bg-[#c2ebfe] p-4 rounded shadow-lg shadow-zinc-700 hover:scale-110 hover: transition-all hover: ease-in-out">
-          <img src={tailwind} className="w-[100px]" />
+          <img src={tailwind} className="w-[100px]"/>
           <h2 className=" font-semibold pt-4 mb-2">Tailwind Css</h2>
           <p className="text-center ">
             I effectively utilized Tailwind CSS to optimize styling in web
