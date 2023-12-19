@@ -4,7 +4,7 @@ function Intro(){
 
     return(
         <>
-            <div className="w-[100%] h-[90vh] flex overflow-hidden mt-[90px] intro">
+            <div className="w-[100%] h-[90vh] flex overflow-hidden mt-[90px] intro" id="Home">
                 <div className="w-[50%] h-[85vh] flex flex-col justify-center items-start pl-[100px] leftContent max-sm:p-[40px] main">
                     <h3 className="text-black text-[25px] mb-[5px]">Welcome,</h3>
                     <h1 className="text-[80px] text-[#008bc6] mb-[5px]">I'm Ajay,</h1><span><h2 className="text-[40px] mb-[10px] font-light">FRONTEND Developer</h2></span>

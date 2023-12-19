@@ -40,7 +40,6 @@ const Project = () => {
       } else if (direction === "next") {
         newIndex = (newIndex + 1) % projects.length;
       }
-
       return newIndex;
     });
   };
@@ -54,7 +53,7 @@ const Project = () => {
   };
 
   return (
-    <div className="w-full h-[100vh] px-[10px]  rounded-2xl project ">
+    <div className="w-full h-[100vh] px-[10px] rounded-2xl project " id="Project">
       <h1 className="text-[#008bc6] inline-block text-[40px] font-semibold border-b-[2px] pt-[30px] border-[#008bc6] ml-[150px] pro">
         Projects
       </h1>
@@ -64,7 +63,7 @@ const Project = () => {
           title="Previous Project"
           onClick={() => handleProjectChange("prev")}
         >
-          <i className="fa-solid fa-chevron-circle-left"></i>
+          <i className="fa-solid fa-chevron-circle-left bg-white rounded-[40px] hover:text-white hover:bg-[#008bc6] active:bg-[black]"></i>
         </span>
         <div className={`${projects[projectIndex] ? "" : "hidden"} w-[80%] h-[80vh] text-center m-5 px-5 rounded-[10px] bg-[#c2ebfeb1] proHead`}>
           <h1 className="text-[#008bc6] text-[35px] inline-block font-medium mt-5 border-2 px-4 border-[#008bc6]">
@@ -81,7 +80,7 @@ const Project = () => {
                   className="absolute top-[5px] right-[5px]  text-[red] w-[25px] h-[25px] rounded-[30px] flex justify-center items-center cursor-pointer"
                   onClick={handleAbout}
                 >
-                  <i className="fa-solid fa-xmark cursor-pointer"></i>
+                  <i className="fa-solid fa-xmark cursor-pointer "></i>
                 </span>
               </span>
             </div>
@@ -95,7 +94,7 @@ const Project = () => {
                 ))}
               </Carousel>
               <button
-                className="p-2 rounded-md font-semibold text-white bg-[#008bc6]"
+                className="p-2 rounded-md font-semibold text-white bg-[#008bc6] hover:text-[#008bc6] hover:border-2 hover:border-[#008bc6] hover:bg-white"
                 onClick={handleAbout}
               >
                 About Project
@@ -108,7 +107,7 @@ const Project = () => {
           title="Next Project"
           onClick={() => handleProjectChange("next")}
         >
-          <i className="fa-solid fa-chevron-circle-right"></i>
+          <i className="fa-solid fa-chevron-circle-right bg-white rounded-[40px] hover:text-white hover:bg-[#008bc6] active:bg-[black]"></i>
         </span>
       </div>
     </div>

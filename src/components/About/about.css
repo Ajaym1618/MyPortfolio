@@ -9,8 +9,8 @@
 
 @media only screen and (max-width: 1150px){
     .rightAbout h1{
-        font-weight: 800;
-        font-size: 25px;
+        font-weight: 600;
+        font-size: 30px;
     }
     .rightAbout p{
         line-height: 30px;

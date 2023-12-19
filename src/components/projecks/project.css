@@ -24,7 +24,7 @@
     .proHead h1{
         font-size: 18px;
     }
-    .fa-solid{
+    .fa-chevron-circle-right,.fa-chevron-circle-left{
         font-size: 30px;
     }
     .About-pro{
@@ -55,7 +55,7 @@
     .proHead h1{
         font-size: 22px;
     }
-    .fa-solid{
+    .fa-chevron-circle-right, .fa-chevron-circle-left{
         font-size: 30px;
     }
     .fa-xmark{
@@ -84,7 +84,7 @@
     .proHead h1{
         font-size: 18px;
     }
-    .fa-solid{
+    .fa-chevron-circle-right, .fa-chevron-circle-left{
         font-size: 30px;
     }
     .About-pro{
@@ -138,7 +138,7 @@
     .proHead{
         height: 65vh;
     }
-    .fa-solid{
+    .fa-chevron-circle-right, .fa-chevron-circle-left{
         font-size: 20px;
     }
     .About-pro{

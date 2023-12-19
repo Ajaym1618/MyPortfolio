@@ -7,6 +7,7 @@
     background-attachment: center;
 }
 
+
 @media only screen and (max-width:780px){
     .nav{
         display: none;
@@ -18,4 +19,9 @@
         display: inline-block;
     }
 } 
-/* 320px 618px */
+
+@media only screen and (max-width:1024px){
+    .nav ul li a{
+        margin-right: 20px;
+    }
+}
