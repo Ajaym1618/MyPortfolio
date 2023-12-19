@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.226ddfa7.css",
-    "main.js": "/MyPortfolio/static/js/main.d23ce0dd.js",
+    "main.js": "/MyPortfolio/static/js/main.503ea48b.js",
     "static/js/787.abd8d82a.chunk.js": "/MyPortfolio/static/js/787.abd8d82a.chunk.js",
     "static/media/blue.jpg": "/MyPortfolio/static/media/blue.96cc2592de42519d9ce4.jpg",
     "static/media/cycle-1.png": "/MyPortfolio/static/media/cycle-1.caf9398aaf386efe7079.png",
@@ -26,18 +26,18 @@
     "static/media/arunachala-school.avif": "/MyPortfolio/static/media/arunachala-school.3a66af5ca8c8cdcb6bb5.avif",
     "static/media/cookies-3.png": "/MyPortfolio/static/media/cookies-3.0a7f3bcdd577454f7118.png",
     "static/media/cookies-2.png": "/MyPortfolio/static/media/cookies-2.4f94c19c68184f0567d8.png",
-    "static/media/Ajay.M__RESUME.pdf": "/MyPortfolio/static/media/Ajay.M__RESUME.fe9ee9af35bb1a88769f.pdf",
+    "static/media/Ajay.M__Resume.pdf": "/MyPortfolio/static/media/Ajay.M__Resume.8114a9cdfeacbd1cd9cd.pdf",
     "static/media/babuji-school.avif": "/MyPortfolio/static/media/babuji-school.dc32f431072663d621dd.avif",
     "static/media/cookies-1.png": "/MyPortfolio/static/media/cookies-1.6a13f25d724ea9445f9c.png",
     "static/media/python-logo.png": "/MyPortfolio/static/media/python-logo.689ac22d714b9deac0f9.png",
     "static/media/paleblue-leaves-petals.avif": "/MyPortfolio/static/media/paleblue-leaves-petals.9464f09c9aba5f03bbf9.avif",
     "index.html": "/MyPortfolio/index.html",
     "main.226ddfa7.css.map": "/MyPortfolio/static/css/main.226ddfa7.css.map",
-    "main.d23ce0dd.js.map": "/MyPortfolio/static/js/main.d23ce0dd.js.map",
+    "main.503ea48b.js.map": "/MyPortfolio/static/js/main.503ea48b.js.map",
     "787.abd8d82a.chunk.js.map": "/MyPortfolio/static/js/787.abd8d82a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.226ddfa7.css",
-    "static/js/main.d23ce0dd.js"
+    "static/js/main.503ea48b.js"
   ]
 }
