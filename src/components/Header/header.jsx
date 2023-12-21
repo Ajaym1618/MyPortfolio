@@ -9,11 +9,13 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showArrow, setShowArrow] = useState(false);
   const handleMenu = () => {
-    setOrNot(!orNot);
+    setOrNot(prevOrNot => !prevOrNot);
     if (!orNot) {
-      document.body.classList.add('no-scroll');
+      document.body.classList.add("no-scroll");
+      document.body.classList.add("sidebar-active");
     } else {
-      document.body.classList.remove('no-scroll');
+      document.body.classList.remove("no-scroll");
+      document.body.classList.remove("sidebar-active");
     }
   };
 
@@ -144,8 +146,8 @@ function Header() {
       </div>
       {orNot === true ? (
         <div
-          className={`w-auto h-full transition-all right-0 top-[93px] z-50 fixed ${
-            orNot ? "fade-in" : "fade-out"
+          className={`w-full h-full transition-all right-0 top-[93px] z-50 fixed ${
+            orNot ? "active" : ""
           } hidden sidebar`}
         >
           <div className="w-full flex flex-col items-center justify-center mt-4">
@@ -227,10 +229,17 @@ function Header() {
         </div>
       ) : null}
       {showArrow && (
-        <Link to="Home" spy={true} smooth={true} offset={-150} duration={200} title="top">
-            <span className=" text-[18px] fixed right-4 bottom-6 z-50 text-white bg-[#008bc6]  shadow-md shadow-[1px_1px_38px_4px_rgba(0, 139, 198,1)] flex justify-center items-center w-8 h-8 rounded-3xl max-md:right-2 cursor-pointer animate-bounce">
+        <Link
+          to="Home"
+          spy={true}
+          smooth={true}
+          offset={-150}
+          duration={200}
+          title="top"
+        >
+          <span className=" text-[18px] fixed right-4 bottom-6 z-50 text-white bg-[#008bc6]  shadow-md shadow-[1px_1px_38px_4px_rgba(0, 139, 198,1)] flex justify-center items-center w-8 h-8 rounded-3xl max-md:right-2 cursor-pointer animate-bounce">
             <i className="fa-solid fa-arrow-up text-[18px]"></i>
-            </span>
+          </span>
         </Link>
       )}
     </>
