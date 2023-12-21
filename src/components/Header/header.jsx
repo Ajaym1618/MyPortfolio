@@ -10,6 +10,11 @@ function Header() {
   const [showArrow, setShowArrow] = useState(false);
   const handleMenu = () => {
     setOrNot(!orNot);
+    if (!orNot) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
   };
 
   useEffect(() => {
@@ -139,9 +144,9 @@ function Header() {
       </div>
       {orNot === true ? (
         <div
-          className={`w-[320px] h-full right-0  z-50 fixed ${
+          className={`w-auto h-full transition-all right-0 top-[93px] z-50 fixed ${
             orNot ? "fade-in" : "fade-out"
-          } border-2 hidden sidebar `}
+          } hidden sidebar`}
         >
           <div className="w-full flex flex-col items-center justify-center mt-4">
             <div className=" w-[100px] h-[100px] flex bg-[#4ac1eb] items-center justify-center rounded-[50px] overflow-hidden">
@@ -149,8 +154,8 @@ function Header() {
             </div>
             <h1 className="text-[18px] pt-1 font-semibold">Ajay.M</h1>
           </div>
-          <ul className="flex flex-col gap-6  h-[60vh] relative mt-[30px]">
-            <li className="pl-8 pb-4 pt-4 border-y-2 border-[#0000003c]">
+          <ul className="flex flex-col h-[60vh] relative mt-[30px]">
+            <li className="pl-8 p-4 border-y-2 border-[#0000003c]">
               <Link
                 to="Home"
                 spy={true}
@@ -163,7 +168,7 @@ function Header() {
                 <i className="fa-solid fa-house pr-2"></i>Home
               </Link>
             </li>
-            <li className="pl-8 pb-4 border-b-2 border-[#0000003c]">
+            <li className="pl-8 p-4 border-b-2 border-[#0000003c]">
               <Link
                 to="About"
                 spy={true}
@@ -176,7 +181,7 @@ function Header() {
                 <i className="fa-solid fa-question pr-2"></i>About
               </Link>
             </li>
-            <li className="pl-8 pb-4 border-b-2 border-[#0000003c]">
+            <li className="pl-8 p-4 border-b-2 border-[#0000003c]">
               <Link
                 to="Project"
                 spy={true}
@@ -189,12 +194,12 @@ function Header() {
                 <i className="fa-solid fa-bars-progress pr-2"></i>Project
               </Link>
             </li>
-            <li className="pl-8 pb-4 border-b-2 border-[#0000003c]">
+            <li className="pl-8 p-4 border-b-2 border-[#0000003c]">
               <a href="#" className="text-black font-semibold ">
                 <i className="fa-solid fa-user pr-2"></i>Contact
               </a>
             </li>
-            <li className="pl-8 pb-4 border-b-2 border-[#0000003c] ">
+            <li className="pl-8 p-4 border-b-2 border-[#0000003c] ">
               <a
                 href={resumee}
                 className="text-black font-semibold "
@@ -203,7 +208,7 @@ function Header() {
                 <i className="fa-solid fa-download pr-2"></i>Download CV
               </a>
             </li>
-            <li className="pl-8 pb-4 border-b-2 border-[#0000003c]">
+            <li className="pl-8 p-4 border-b-2 border-[#0000003c]">
               <a
                 href="https://github.com/Ajaym1618"
                 target="_blank"
@@ -213,12 +218,12 @@ function Header() {
               </a>
             </li>
           </ul>
-          <span
+          {/* <span
             className=" px-4 text-[20px] absolute top-0 right-0 text-black"
             onClick={handleMenu}
           >
             <i className="fa-solid fa-xmark"></i>
-          </span>
+          </span> */}
         </div>
       ) : null}
       {showArrow && (
