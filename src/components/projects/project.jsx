@@ -70,7 +70,7 @@ const Project = () => {
             {projects[projectIndex].name}
           </h1>
           {showAbout[projectIndex] ? (
-            <div className="w-[100%] h-[70vh] flex justify-center items-center flex-col pt-[20px] proAbout">
+            <div className="w-[100%] h-[70vh] flex justify-center items-center flex-col pt-[20px]  p-2 proAbout">
               <span className="bg-[#00000028] w-[90%] h-[60vh] mt-10 p-4 rounded-xl relative cursor-pointer About-pro">
                 <h1 className="w-[50%] text-[30px] text-left font-md">About:</h1>
                 <p className="w-[100%] text-[18px] text-left indent-10 paraAbout">
