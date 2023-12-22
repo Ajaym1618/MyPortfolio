@@ -7,7 +7,8 @@ import "./contact.css";
 
 function Contact() {
   const [formData, setFormData] = useState({
-    name: "",
+    Fname: "",
+    Lname: "",
     email: "",
     message: "",
   });
@@ -29,7 +30,8 @@ function Contact() {
       console.log("Before clearing:", formData);
       // Optionally, show a success message to the user or redirect to a thank you page.
       setFormData({
-        name: "",
+        Fname: "",
+        Lname: "",
         email: "",
         message: "",
       });
@@ -57,7 +59,7 @@ function Contact() {
                   placeholder="Enter Fname"
                   type="text"
                   name="name"
-                  value={formData.name}
+                  value={formData.Fname}
                   onChange={handleChange}
                   required
                   className="w-[200px] flex flex-wrap text-[15px] p-2 mr-10  rounded border-[1px] border-neutral-400"
@@ -71,7 +73,7 @@ function Contact() {
                   placeholder="Enter Lname"
                   type="text"
                   name="name"
-                  value={formData.name}
+                  value={formData.Lname}
                   onChange={handleChange}
                   required
                   className="w-[200px] flex flex-wrap text-[15px] p-2 rounded border-[1px] border-neutral-400"
