@@ -67,4 +67,7 @@
     .subContact form div{
         display: block;
     }
+    .subContact h1{
+         width: 160px;
+    }
 }

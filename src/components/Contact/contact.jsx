@@ -44,7 +44,7 @@ function Contact() {
     <div className="w-full h-[70vh] flex justify-center items-center contact" id="contact">
       <div className="w-[90%] h-[60vh] flex justify-center items-center border-2 border-[#008bc6] rounded-xl bg-[#c2ebfeb1] minContact">
         <div className="w-[40%] block pl-10 subContact">
-          <h1 className="text-[#008bc6] text-[40px] inline-block w-[160px] font-medium border-b-2 border-[#008bc6] mb-6">
+          <h1 className="text-[#008bc6] text-[40px] inline-block font-medium border-b-2 border-[#008bc6] mb-6">
             Contact me
           </h1>
           <form onSubmit={handleSubmit} className="block">
@@ -100,7 +100,7 @@ function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-[300px] flex flex-wrap resize-none text-[15px] p-2   rounded border-[1px] border-neutral-400"
+                className="w-[300px] flex flex-wrap resize-none text-[15px] p-2  rounded border-[1px] border-neutral-400"
               ></textarea>
             </div>
             <button
