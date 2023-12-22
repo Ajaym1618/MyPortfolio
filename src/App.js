@@ -6,6 +6,7 @@ import Skill from './components/Skills/skill';
 import Project from './components/projects/project'; 
 import Education from './components/Education/education';
 import Internship from './components/Internship/internship';
+import Contact from './components/Contact/contact';
 import Footer from './components/Footer/footer';
 import { useState, useEffect } from 'react';
 
@@ -35,6 +36,7 @@ function App() {
       <Education/>
       <Project/>
       <Internship/>
+      <Contact/>
       <Footer/>
     </>
   );

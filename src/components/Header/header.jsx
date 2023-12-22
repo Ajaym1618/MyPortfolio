@@ -9,7 +9,7 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showArrow, setShowArrow] = useState(false);
   const handleMenu = () => {
-    setOrNot(prevOrNot => !prevOrNot);
+    setOrNot((prevOrNot) => !prevOrNot);
     if (!orNot) {
       document.body.classList.add("no-scroll");
       document.body.classList.add("sidebar-active");
@@ -109,7 +109,7 @@ function Header() {
             </li>
             <li className="inline-block hover:text-black">
               <Link
-                to="Contact"
+                to="contact"
                 spy={true}
                 smooth={true}
                 offset={50}
@@ -197,9 +197,17 @@ function Header() {
               </Link>
             </li>
             <li className="pl-8 p-4 border-b-2 border-[#0000003c]">
-              <a href="#" className="text-black font-semibold ">
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={200}
+                className="text-black font-semibold"
+                onClick={handleMenu}
+              >
                 <i className="fa-solid fa-user pr-2"></i>Contact
-              </a>
+              </Link>
             </li>
             <li className="pl-8 p-4 border-b-2 border-[#0000003c] ">
               <a
