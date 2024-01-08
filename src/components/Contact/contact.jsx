@@ -1,84 +1,80 @@
 import React, { useState } from "react";
-import axios from "axios";
-import { Button, Form, Input } from "antd";
-
+import '../Contact/contact.css'
+import { Button } from "antd";
 import contactImg from "../../assets/contactImg.png";
-import "./contact.css";
 
 function Contact() {
   const [formData, setFormData] = useState({
-    Fname: "",
-    Lname: "",
+    name_F: "",
+    // LName: "",
     email: "",
     message: "",
   });
-
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
+    setFormData((prevFormData) => ({
+      ...prevFormData,
       [name]: value,
     }));
+    
   };
+  console.log(formData)
 
-  const handleSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-
     try {
-      const response = axios.post("http://localhost:3001/send-email", formData);
-      console.log(response.data);
-      console.log("Before clearing:", formData);
-      // Optionally, show a success message to the user or redirect to a thank you page.
-      setFormData({
-        Fname: "",
-        Lname: "",
-        email: "",
-        message: "",
+      const response = await fetch("http://localhost:3001/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
-      console.log("After clearing:", formData);
+
+      if (response.ok) {
+        console.log("Email sent successfully!");
+      } else {
+        console.error("Failed to send email.");
+      }
     } catch (error) {
       console.error("Error sending email:", error);
-      // Handle the error and show a relevant message to the user.
     }
   };
 
   return (
     <div className="w-full h-[70vh] flex justify-center items-center contact" id="contact">
       <div className="w-[90%] h-[60vh] flex justify-center items-center border-2 border-[#008bc6] rounded-xl bg-[#c2ebfeb1] minContact">
-        <div className="w-[40%] block pl-10 subContact">
+        <div className="w-[40%] pl-10 subContact">
           <h1 className="text-[#008bc6] text-[40px] inline-block font-medium border-b-2 border-[#008bc6] mb-6">
             Contact me
           </h1>
-          <form onSubmit={handleSubmit} className="block">
+          <form className="block">
             <div className="flex mb-4">
-              <span>
-                <label className="text-[17px] font-semibold block">
-                  FirstName:
-                </label>
+              <div>
+                <label className="text-[17px] font-semibold block">Name:</label>
                 <input
                   placeholder="Enter Fname"
-                  type="text"
+                  type="email"
                   name="name"
-                  value={formData.Fname}
+                  value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-[200px] flex flex-wrap text-[15px] p-2 mr-10  rounded border-[1px] border-neutral-400"
+                  className="w-[200px] text-[15px] p-2 rounded border-[1px] border-neutral-400"
                 />
-              </span>
-              <span>
-                <label className=" block text-[17px] font-semibold">
-                  LastName:
-                </label>
+              </div>
+              {/* <div>
+                <label className="block text-[17px] font-semibold">LastName:</label>
                 <input
                   placeholder="Enter Lname"
                   type="text"
-                  name="name"
-                  value={formData.Lname}
+                  name="LName"
+                  value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-[200px] flex flex-wrap text-[15px] p-2 rounded border-[1px] border-neutral-400"
-                />
-              </span>
+                  className="w-[200px] text-[15px] p-2 rounded border-[1px] border-neutral-400"
+                /> 
+              </div>*/}
             </div>
             <div>
               <label className="text-[17px] font-semibold block">Email:</label>
@@ -89,32 +85,31 @@ function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-[300px] flex flex-wrap text-[15px] p-2  rounded border-[1px] border-neutral-400"
+                className="w-[100%] text-[15px] p-2 rounded border-[1px] border-neutral-400"
               />
             </div>
             <div>
-              <label className="text-[17px] font-semibold block">
-                Message:
-              </label>
+              <label className="text-[17px] font-semibold block">Message:</label>
               <textarea
                 placeholder="enter your message here"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-[300px] flex flex-wrap resize-none text-[15px] p-2  rounded border-[1px] border-neutral-400"
+                className="w-[100%] resize-none text-[15px] p-2 rounded border-[1px] border-neutral-400"
               ></textarea>
             </div>
-            <button
+            <Button
               type="submit"
-              className="px-3 mt-2 rounded-sm py-2 bg-[#008bc6] text-white"
+              className="flex justify-center items-center px-3 mt-2 mb-2 rounded-sm py-2 bg-[#008bc6] text-white"
+              onClick={handleFormSubmit}
             >
               Submit
-            </button>
+            </Button>
           </form>
         </div>
-        <div className="w-60% block ">
-          <img src={contactImg} className="w-[600px] h-[400px] imgDiv" />
+        <div className="flex justify-center items-center  imgDiv">
+          <img src={contactImg} className=" w-[100%] h-[400px]" alt="Contact" />
         </div>
       </div>
     </div>

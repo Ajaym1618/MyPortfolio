@@ -1,5 +1,6 @@
 import "../Header/header.css";
 import { useState, useEffect } from "react";
+import { IoMenu } from "react-icons/io5";
 import { Link } from "react-scroll";
 import resumee from "../../assets/Ajay.M__Resume.pdf";
 import id from "../../assets/for-portfolio.png";
@@ -8,6 +9,8 @@ function Header() {
   const [orNot, setOrNot] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showArrow, setShowArrow] = useState(false);
+  const [show, setShow] = useState(false);
+
   const handleMenu = () => {
     setOrNot((prevOrNot) => !prevOrNot);
     if (!orNot) {
@@ -18,6 +21,15 @@ function Header() {
       document.body.classList.remove("sidebar-active");
     }
   };
+
+  const handleShow = () =>{
+    setShow(!show)
+    if (!show) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }
 
   useEffect(() => {
     let prevScrollPos = window.pageYOffset;
@@ -139,16 +151,10 @@ function Header() {
             </li>
           </ul>
         </nav>
-        <i
-          className="fa-solid fa-bars text-[30px] text-[#008bc6] hidden menuBar "
-          onClick={handleMenu}
-        ></i>
+        <IoMenu className=" text-[40px] text-[#008bc6] hidden menuBar" onClick={handleShow}/>
       </div>
-      {orNot === true ? (
         <div
-          className={`w-full h-full transition-all right-0 top-[93px] z-50 fixed ${
-            orNot ? "active" : ""
-          } hidden sidebar`}
+          className={`w-full h-full transition-all ${show ? "sidebar active" : "sidebar"}`}
         >
           <div className="w-full flex flex-col items-center justify-center mt-4">
             <div className=" w-[100px] h-[100px] flex bg-[#4ac1eb] items-center justify-center rounded-[50px] overflow-hidden">
@@ -165,7 +171,7 @@ function Header() {
                 offset={-150}
                 duration={200}
                 className="text-black font-semibold"
-                onClick={handleMenu}
+                onClick={handleShow}
               >
                 <i className="fa-solid fa-house pr-2"></i>Home
               </Link>
@@ -178,7 +184,7 @@ function Header() {
                 offset={-150}
                 duration={200}
                 className="text-black font-semibold"
-                onClick={handleMenu}
+                onClick={handleShow}
               >
                 <i className="fa-solid fa-question pr-2"></i>About
               </Link>
@@ -191,7 +197,7 @@ function Header() {
                 offset={-150}
                 duration={200}
                 className="text-black font-semibold"
-                onClick={handleMenu}
+                onClick={handleShow}
               >
                 <i className="fa-solid fa-bars-progress pr-2"></i>Project
               </Link>
@@ -202,9 +208,9 @@ function Header() {
                 spy={true}
                 smooth={true}
                 offset={-150}
-                duration={200}
+                duration={100}
                 className="text-black font-semibold"
-                onClick={handleMenu}
+                onClick={handleShow}
               >
                 <i className="fa-solid fa-user pr-2"></i>Contact
               </Link>
@@ -228,14 +234,7 @@ function Header() {
               </a>
             </li>
           </ul>
-          {/* <span
-            className=" px-4 text-[20px] absolute top-0 right-0 text-black"
-            onClick={handleMenu}
-          >
-            <i className="fa-solid fa-xmark"></i>
-          </span> */}
         </div>
-      ) : null}
       {showArrow && (
         <Link
           to="Home"
