@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.881d37d7.css",
-    "main.js": "/MyPortfolio/static/js/main.2e6fef7c.js",
+    "main.css": "/MyPortfolio/static/css/main.4b367385.css",
+    "main.js": "/MyPortfolio/static/js/main.85657cca.js",
     "static/js/787.abd8d82a.chunk.js": "/MyPortfolio/static/js/787.abd8d82a.chunk.js",
     "static/media/blue.jpg": "/MyPortfolio/static/media/blue.96cc2592de42519d9ce4.jpg",
     "static/media/cycle-1.png": "/MyPortfolio/static/media/cycle-1.caf9398aaf386efe7079.png",
@@ -23,6 +23,7 @@
     "static/media/for_portfolio__1_-removebg-preview.png": "/MyPortfolio/static/media/for_portfolio__1_-removebg-preview.a39156ffd02b31344ab1.png",
     "static/media/illus-removebg-preview.png": "/MyPortfolio/static/media/illus-removebg-preview.6a6db94d2abb6261fa74.png",
     "static/media/me.png": "/MyPortfolio/static/media/me.e265d17fa008f1f18b63.png",
+    "static/media/logoIntro.png": "/MyPortfolio/static/media/logoIntro.07558dd3df06c181a05a.png",
     "static/media/for-portfolio.png": "/MyPortfolio/static/media/for-portfolio.6fa9c29ec119673c238e.png",
     "static/media/arunachala-school.avif": "/MyPortfolio/static/media/arunachala-school.3a66af5ca8c8cdcb6bb5.avif",
     "static/media/cookies-3.png": "/MyPortfolio/static/media/cookies-3.0a7f3bcdd577454f7118.png",
@@ -33,12 +34,12 @@
     "static/media/python-logo.png": "/MyPortfolio/static/media/python-logo.689ac22d714b9deac0f9.png",
     "static/media/paleblue-leaves-petals.avif": "/MyPortfolio/static/media/paleblue-leaves-petals.9464f09c9aba5f03bbf9.avif",
     "index.html": "/MyPortfolio/index.html",
-    "main.881d37d7.css.map": "/MyPortfolio/static/css/main.881d37d7.css.map",
-    "main.2e6fef7c.js.map": "/MyPortfolio/static/js/main.2e6fef7c.js.map",
+    "main.4b367385.css.map": "/MyPortfolio/static/css/main.4b367385.css.map",
+    "main.85657cca.js.map": "/MyPortfolio/static/js/main.85657cca.js.map",
     "787.abd8d82a.chunk.js.map": "/MyPortfolio/static/js/787.abd8d82a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.881d37d7.css",
-    "static/js/main.2e6fef7c.js"
+    "static/css/main.4b367385.css",
+    "static/js/main.85657cca.js"
   ]
 }
