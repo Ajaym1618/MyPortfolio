@@ -1,25 +1,23 @@
-import React, { useState } from "react";
-import '../Contact/contact.css'
+import React, { useState, useEffect } from "react";
+import "../Contact/contact.css";
 import { Button } from "antd";
 import contactImg from "../../assets/contactImg.png";
 
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
-    // LName: "",
     email: "",
     message: "",
   });
-  
+  const [showPopup, setShowPopup] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: value,
     }));
-    
   };
- 
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -40,6 +38,9 @@ function Contact() {
           email: "",
           message: "",
         });
+        
+        setShowPopup(true);
+        console.log("After", showPopup);
         console.log("After update:", formData);
       } else {
         console.error("Failed to send email.");
@@ -48,9 +49,20 @@ function Contact() {
       console.error("Error sending email:", error);
     }
   };
+  useEffect(() => {
+    if (showPopup) {
+      const timer = setTimeout(() => {
+        setShowPopup(false);
+      }, 1200);
+      return () => clearTimeout(timer);
+    }
+  }, [showPopup]);
 
   return (
-    <div className="w-full h-[70vh] flex justify-center items-center contact" id="contact">
+    <div
+      className="w-full h-[70vh] flex justify-center items-center contact"
+      id="contact"
+    >
       <div className="w-[90%] h-[60vh] flex justify-center items-center border-2 border-[#008bc6] rounded-xl bg-[#c2ebfeb1] minContact">
         <div className="w-[40%] pl-10 subContact">
           <h1 className="text-[#008bc6] text-[40px] inline-block font-medium border-b-2 border-[#008bc6] mb-6">
@@ -84,7 +96,9 @@ function Contact() {
               />
             </div>
             <div>
-              <label className="text-[17px] font-semibold block">Message:</label>
+              <label className="text-[17px] font-semibold block">
+                Message:
+              </label>
               <textarea
                 placeholder="enter your message here"
                 name="message"
@@ -107,6 +121,14 @@ function Contact() {
           <img src={contactImg} className=" w-[100%] h-[400px]" alt="Contact" />
         </div>
       </div>
+      {showPopup && (
+        <div className="popup">
+          <span>Message received! 📩 </span>
+          {/* <span role="img" aria-label="tick-mark">
+            ✅
+          </span> */}
+        </div>
+      )}
     </div>
   );
 }
