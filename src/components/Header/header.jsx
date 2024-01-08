@@ -4,6 +4,7 @@ import { IoMenu } from "react-icons/io5";
 import { Link } from "react-scroll";
 import resumee from "../../assets/Ajay.M__Resume.pdf";
 import id from "../../assets/for-portfolio.png";
+import MyFolio from '../../assets/logoIntro.png'
 
 function Header() {
   const [orNot, setOrNot] = useState(false);
@@ -66,10 +67,11 @@ function Header() {
       <div
         className={`w-[100%] h-[15vh] bg-[#eef8fc] flex justify-between items-center px-[50px] shadow-lg shadow-[#c2ebfe] fixed top-0 z-50 transition-transform duration-800 ease-in-out  ${
           isScrolled ? "hidden" : "block"
-        } `}
+        } Header`}
       >
         <div className="logo">
-          <h1 className="text-[#008bc6] text-3xl font-semibold cursor-pointer">
+          <img src={MyFolio} className="w-[200px]" />
+          {/* <h1 className="text-[#008bc6] text-3xl font-semibold cursor-pointer">
             <Link
               to="Home"
               spy={true}
@@ -79,7 +81,7 @@ function Header() {
             >
               MyFolio
             </Link>
-          </h1>
+          </h1> */}
         </div>
         <nav className={`nav ${orNot ? "hidden" : "block"}`}>
           <ul className=" flex justify-center items-center">

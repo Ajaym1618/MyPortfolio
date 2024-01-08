@@ -32,6 +32,9 @@
     .sidebar{
         display: inline-block;
     }
+    .logo img{
+        width: 150px;
+    }
 } 
 
 @media only screen and (max-width:1024px){
@@ -40,3 +43,8 @@
     }
 }
 
+@media only screen and (max-width:325px){
+    .Header{
+        padding: 0px 20px;
+    }
+}
