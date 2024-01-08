@@ -108,13 +108,13 @@ function Contact() {
                 className="w-[100%] resize-none text-[15px] p-2 rounded border-[1px] border-neutral-400"
               ></textarea>
             </div>
-            <Button
+            <button
               type="submit"
               className="flex justify-center items-center px-3 mt-2 mb-2 rounded-sm py-2 bg-[#008bc6] text-white"
               onClick={handleFormSubmit}
             >
               Submit
-            </Button>
+            </button>
           </form>
         </div>
         <div className="flex justify-center items-center  imgDiv">
