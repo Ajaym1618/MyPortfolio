@@ -5,7 +5,7 @@ import contactImg from "../../assets/contactImg.png";
 
 function Contact() {
   const [formData, setFormData] = useState({
-    name_F: "",
+    name: "",
     // LName: "",
     email: "",
     message: "",
@@ -19,7 +19,7 @@ function Contact() {
     }));
     
   };
-  console.log(formData)
+ 
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -34,6 +34,13 @@ function Contact() {
 
       if (response.ok) {
         console.log("Email sent successfully!");
+        console.log("Before update:", formData);
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+        console.log("After update:", formData);
       } else {
         console.error("Failed to send email.");
       }
@@ -63,18 +70,6 @@ function Contact() {
                   className="w-[200px] text-[15px] p-2 rounded border-[1px] border-neutral-400"
                 />
               </div>
-              {/* <div>
-                <label className="block text-[17px] font-semibold">LastName:</label>
-                <input
-                  placeholder="Enter Lname"
-                  type="text"
-                  name="LName"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-[200px] text-[15px] p-2 rounded border-[1px] border-neutral-400"
-                /> 
-              </div>*/}
             </div>
             <div>
               <label className="text-[17px] font-semibold block">Email:</label>
