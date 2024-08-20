@@ -12,7 +12,7 @@ const About = () => {
           </div>
         </div>
         <div className="w-full h-full flex items-center">
-          <div className="w-[90%] text-2xl text-[#0275a4] flex flex-col gap-5 justify-center pr-6 max-xl:text-xl max-xl:items-center max-lg:text-lg max-lg:gap-2 max-lg:w-full max-sm:px-4 max-sm:text-sm max-sm:pt-4">
+          <div className="w-[90%] text-2xl text-[#0275a4] flex flex-col gap-5 justify-center pr-6 max-xl:text-xl max-xl:items-center max-lg:text-lg max-lg:gap-2 max-lg:w-full max-sm:px-4 max-sm:text-[16px] max-sm:pt-4">
             <p className="indent-6">
               I am a full-stack web developer with a strong foundation in
               Computer Science and Engineering, specializing in MERN stack
