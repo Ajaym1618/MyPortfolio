@@ -3,7 +3,7 @@ import cherry from "../assets/cherry.png";
 
 const About = () => {
   return (
-    <div className="w-[100%] h-[88vh] flex flex-col items-center py-8 max-xl:py-4 max-sm:h-auto max-sm:py-0 max-sm:pb-4">
+    <div className="w-[100%] h-[88vh] flex flex-col items-center py-8 max-xl:py-4 max-sm:h-auto max-sm:py-8 max-sm:pb-4">
       <h1 className="text-5xl text-[#c12f2f] max-lg:text-3xl">About Me</h1>
       <div className="w-full h-full flex max-sm:flex-col-reverse">
         <div className="w-full h-full flex justify-center items-center max-lg:w-[70%] max-sm:w-full">
