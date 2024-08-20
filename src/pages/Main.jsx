@@ -19,7 +19,7 @@ const Main = () => {
     };
   }, []);
   return (
-    <div className="w-[100%] h-[88vh] bg-white flex max-sm:flex-col max-sm:justify-center max-sm:h-auto max-sm:py-16">
+    <div className="w-[100%] h-[88vh] bg-white flex max-sm:flex-col max-sm:justify-center">
       <div className="w-[100%] h-full pl-32 flex flex-col gap-8 justify-center items-start text-[#0275a4] max-lg:pl-10 max-sm:py-0 max-sm:gap-4 max-sm:pl-6 max-sm:h-auto">
         <h1 className="text-5xl font-light max-lg:text-4xl max-sm:text-3xl">Hi,</h1>
         <h1 className="text-8xl max-lg:text-6xl max-sm:text-4xl">
