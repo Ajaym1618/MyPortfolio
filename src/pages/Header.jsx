@@ -6,7 +6,7 @@ import { SiCodefactor } from "react-icons/si";
 
 const Header = () => {
   return (
-    <div className="w-[100%] h-[12vh] px-20 flex justify-between items-center bg-white shadow-sm shadow-slate-400 sticky top-0 max-lg:px-10 max-sm:px-5">
+    <div className="w-[100%] h-[12vh] px-20 flex justify-between items-center bg-white shadow-sm shadow-slate-400 sticky top-0 z-20 max-lg:px-10 max-sm:px-5">
       <div className="w-[70px]">
         <img src={Aj} alt="logo" className="w-[100%]" />
       </div>

@@ -10,7 +10,7 @@ import mongo from "../assets/mongo.png";
 
 const Skills = () => {
   return (
-    <div className="w-[100%] h-[88vh] py-8 max-sm:h-auto">
+    <div className="w-[100%] h-[88vh] py-8 max-lg:h-auto">
       <h1 className="w-full text-[#c12f2f] text-5xl text-center max-lg:text-4xl">Skills</h1>
       <div className="w-full h-full flex py-4 max-lg:flex-col">
         <div className="w-full h-full flex flex-col justify-center items-center gap-4 px-6 max-lg:px-2">
