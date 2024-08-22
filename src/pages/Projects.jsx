@@ -116,7 +116,7 @@ const Projects = () => {
 
 
   return (
-    <section className="w-[100%] h-[88vh] py-12 px-6 max-xl:h-auto max-sm:px-2">
+    <section className="w-[100%] h-[88vh] py-12 px-6 max-xl:h-auto max-sm:px-2" id="Projects">
       <div className="w-full px-4 max-sm:px-0">
         <h1 className="text-5xl text-center mb-8 text-[#c12f2f] max-lg:text-3xl">
           My Projects
@@ -154,7 +154,7 @@ const Projects = () => {
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3 py-1 text-white border-2 border-[#0275a4] bg-[#0275a4] rounded-md  transition-all duration-100 ease-linear hover:text-[#0275a4] hover:bg-white active:text-[#c12f2f] active:border-[#c12f2f]"
+                    className="px-3 py-1 text-white border-2 border-[#0275a4] bg-[#0275a4] rounded-md  transition-all duration-300 ease-linear hover:text-[#0275a4] hover:bg-white active:text-[#c12f2f] active:border-[#c12f2f]"
                   >
                     Live Demo
                   </a>
@@ -162,7 +162,7 @@ const Projects = () => {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3 py-1 text-white border-2 border-[#0275a4] bg-[#0275a4] rounded-md transition-all duration-100 ease-linear hover:text-[#0275a4] hover:bg-white active:text-[#c12f2f] active:border-[#c12f2f]"
+                    className="px-3 py-1 text-white border-2 border-[#0275a4] bg-[#0275a4] rounded-md transition-all duration-300 ease-linear hover:text-[#0275a4] hover:bg-white active:text-[#c12f2f] active:border-[#c12f2f]"
                   >
                     GitHub
                   </a>

@@ -51,7 +51,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-[100%] h-[88vh] py-12 flex max-sm:flex-col max-lg:h-auto">
+    <div className="w-[100%] h-[88vh] py-4 flex max-sm:flex-col max-lg:h-auto" id="Contact">
       {/* Left Section: Form */}
       <div className="w-full h-full flex flex-col items-end justify-center py-6 px-4 max-sm:items-center relative">
         <h1 className="text-5xl text-center text-[#c12f2f] pr-24 max-lg:text-3xl mb-8">
