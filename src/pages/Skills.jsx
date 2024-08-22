@@ -51,10 +51,10 @@ const Skills = () => {
               <div className="w-full">
                 <div className="w-full flex justify-between pt-4">
                   <h1 className="text-xl">CSS</h1>
-                  <p>80%</p>
+                  <p>70%</p>
                 </div>
                 <div className="w-full bg-gray-300 rounded-full h-1">
-                  <div className="bg-[#039be5] w-[80%] h-1 rounded-full"></div>
+                  <div className="bg-[#039be5] w-[70%] h-1 rounded-full"></div>
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@ const Skills = () => {
                 <img src={js} alt="html" className="w-[70px]" />
               </div>
               <div className="w-full">
-                <div className="w-full flex justify-between pt-4">
+                <div className="w-full flex justify-between pt-4"> 
                   <h1 className="text-xl">JavaScript</h1>
                   <p>80%</p>
                 </div>

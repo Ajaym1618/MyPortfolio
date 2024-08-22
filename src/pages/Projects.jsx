@@ -95,30 +95,34 @@ const projectsData = [
       mind13,
       mind14,
     ],
-    liveLink: "https://careercraze.vercel.app/",
-    githubLink: "https://github.com/Ajaym1618/JobListing-frontend",
+    liveLink: "https://mindsparkpro.vercel.app/",
+    githubLink: "https://github.com/Ajaym1618/MindSpark-frontend",
   },
 ];
 
 const Projects = () => {
+  const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
   useEffect(() => {
+    const images = projectsData[selectedProjectIndex].images;
     const interval = setInterval(() => {
-      setCurrentImageIndex(
-        (prevIndex) => (prevIndex + 1) % projectsData[0].images.length
+      setCurrentImageIndex((prevIndex) =>
+        (prevIndex + 1) % images.length
       );
     }, 2000);
     return () => clearInterval(interval);
-  }, []);
+  }, [selectedProjectIndex]);
+
 
   return (
-    <section className="w-[100%] h-[88vh] py-8 px-6 max-sm:h-auto max-sm:px-2">
-      <div className="container mx-auto px-4 max-sm:px-0">
-        <h2 className="text-4xl text-center mb-8 text-[#c12f2f]">
+    <section className="w-[100%] h-[88vh] py-8 px-6 max-xl:h-auto max-sm:px-2">
+      <div className="w-full px-4 max-sm:px-0">
+        <h1 className="text-5xl text-center mb-8 text-[#c12f2f] max-lg:text-3xl">
           My Projects
-        </h2>
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projectsData.map((project) => (
+          {projectsData.map((project, index) => (
             <div
               key={project.id}
               className="bg-white shadow-slate-400 shadow-lg rounded-lg overflow-hidden cursor-pointer"
@@ -150,7 +154,7 @@ const Projects = () => {
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3 py-1 text-white border-2 border-[#0275a4] bg-[#0275a4] rounded-md hover:text-[#0275a4] hover:bg-white  "
+                    className="px-3 py-1 text-white border-2 border-[#0275a4] bg-[#0275a4] rounded-md  transition-all duration-100 ease-linear hover:text-[#0275a4] hover:bg-white active:text-[#c12f2f] active:border-[#c12f2f]"
                   >
                     Live Demo
                   </a>
@@ -158,7 +162,7 @@ const Projects = () => {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3 py-1 text-white border-2 border-[#0275a4] bg-[#0275a4] rounded-md hover:text-[#0275a4] hover:bg-white "
+                    className="px-3 py-1 text-white border-2 border-[#0275a4] bg-[#0275a4] rounded-md transition-all duration-100 ease-linear hover:text-[#0275a4] hover:bg-white active:text-[#c12f2f] active:border-[#c12f2f]"
                   >
                     GitHub
                   </a>
