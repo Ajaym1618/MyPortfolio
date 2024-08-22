@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
 
 const App = () => {
   return <div className="w-[100%] h-auto bg-white">
@@ -14,6 +15,7 @@ const App = () => {
     <Skills/>
     <Projects/>
     <Contact/>
+    <Footer/>
   </div>;
 };
 
