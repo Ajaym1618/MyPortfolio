@@ -116,7 +116,7 @@ const Projects = () => {
 
 
   return (
-    <section className="w-[100%] h-[88vh] py-8 px-6 max-xl:h-auto max-sm:px-2">
+    <section className="w-[100%] h-[88vh] py-12 px-6 max-xl:h-auto max-sm:px-2">
       <div className="w-full px-4 max-sm:px-0">
         <h1 className="text-5xl text-center mb-8 text-[#c12f2f] max-lg:text-3xl">
           My Projects
