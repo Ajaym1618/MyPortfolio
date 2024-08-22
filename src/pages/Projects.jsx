@@ -96,7 +96,7 @@ const projectsData = [
       mind14,
     ],
     liveLink: "https://mindsparkpro.vercel.app/",
-    githubLink: "https://github.com/Ajaym1618/MindSpark-frontend",
+    githubLink: "https://github.com/Ajaym1618/LMS-frontend",
   },
 ];
 
