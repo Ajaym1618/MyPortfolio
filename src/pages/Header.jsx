@@ -46,7 +46,7 @@ const Header = () => {
         <SiCodefactor />
       </div>
       <div
-        className={`w-[320px] h-[88vh] hidden text-xl font-semibold text-[#0275a4] px-8 py-6 max-sm:flex flex-col gap-6 bg-white z-10 fixed top-[70px] shadow-lg shadow-gray-500 transition-all ease-linear duration-500 ${
+        className={`w-[100%] h-[88vh] hidden text-xl font-semibold text-[#0275a4] px-8 py-6 max-sm:flex flex-col gap-6 bg-white z-10 fixed top-24 shadow-lg shadow-gray-500 transition-all ease-linear duration-500 ${
           nav === true ? "right-0" : "-right-96"
         }`}
       >
