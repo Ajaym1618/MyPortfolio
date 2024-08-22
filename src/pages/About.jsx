@@ -15,7 +15,7 @@ const About = () => {
             <a
               href={resume}
               target="_blank"
-              className="flex justify-center py-2 px-4 bg-[#c12f2f] text-white border-2 border-[#c12f2f] rounded-md transition-all ease-linear duration-150 hover:text-[#0275a4] hover:bg-white hover:border-[#0275a4] max-sm:px-3 max-sm:py-2 max-sm:text-sm"
+              className="flex justify-center py-2 px-4 bg-[#c12f2f] text-white border-2 border-[#c12f2f] rounded-md transition-all ease-linear duration-150 hover:text-[#0275a4] hover:bg-white hover:border-[#0275a4] max-sm:hidden"
             >
               View Cv
             </a>
