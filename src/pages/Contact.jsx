@@ -51,7 +51,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-[100%] h-[88vh] py-4 flex max-sm:flex-col max-lg:h-auto" id="Contact">
+    <div
+      className="w-[100%] h-[88vh] py-4 flex max-sm:flex-col max-lg:h-auto"
+      id="Contact"
+    >
       {/* Left Section: Form */}
       <div className="w-full h-full flex flex-col items-end justify-center py-6 px-4 max-sm:items-center relative">
         <h1 className="text-5xl text-center text-[#c12f2f] pr-24 max-lg:text-3xl mb-8">
@@ -115,21 +118,18 @@ const Contact = () => {
               Your Message
             </label>
           </div>
-
+          {successMessage && (
+            <div className="text-[#0275a4] flex items-center gap-2 absolute bottom-16 right-10 max-lg:bottom-20 max-lg:left-12 max-sm:left-7">
+              <FaCircleCheck className="text-green-500" />
+              {successMessage}
+            </div>
+          )}
           <button
             type="submit"
             className="mt-4 px-8 py-3 flex items-center gap-2 border-2 border-[#c12f2f] text-[#c12f2f] rounded-full tracking-wider hover:bg-white hover:text-[#0275a4] transition-all duration-300 active:scale-95"
           >
             SUBMIT <VscSend />
           </button>
-          {successMessage && (
-            <div className="flex flex-col items-center py-4 px-6 absolute -top-6 left-10 rounded-md shadow-lg shadow-gray-300">
-              <div className="text-[#0275a4] flex items-center gap-2">
-                <FaCircleCheck className="text-green-500" />
-                {successMessage}
-              </div>
-            </div>
-          )}
         </form>
       </div>
 

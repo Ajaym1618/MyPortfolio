@@ -25,5 +25,130 @@
 }
 
 
+.html {
+  animation: html 4s ease-in-out forwards;
+  width: var(--content-width, 1%);
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes html {
+  from{
+    width: 2%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+.css {
+  animation: css 4s ease-in-out forwards;
+  width: var(--content-width, 1%);
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes css {
+  from{
+    width: 2%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+.js {
+  animation: js 4s ease-in-out forwards;
+  width: var(--content-width, 1%);
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes js {
+  from{
+    width: 2%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+.react {
+  animation: react 4s ease-in-out forwards;
+  width: var(--content-width, 1%);
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes react {
+  from{
+    width: 2%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+.tailwind {
+  animation: tailwind 4s ease-in-out forwards;
+  width: var(--content-width, 1%);
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes tailwind {
+  from{
+    width: 2%;
+  }
+  to {
+    width: 80%;
+  }
+}
+.node {
+  animation: node 4s ease-in-out forwards;
+  width: var(--content-width, 1%);
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes node {
+  from{
+    width: 2%;
+  }
+  to {
+    width: 70%;
+  }
+}
+.exp {
+  animation: exp 4s ease-in-out forwards;
+  width: var(--content-width, 1%);
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes exp {
+  from{
+    width: 2%;
+  }
+  to {
+    width: 70%;
+  }
+}
+.mongo {
+  animation: mongo 4s ease-in-out forwards;
+  width: var(--content-width, 1%);
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes mongo {
+  from{
+    width: 2%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
 
 

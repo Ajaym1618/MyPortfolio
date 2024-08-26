@@ -33,7 +33,7 @@ const Main = () => {
         </p>
         <div className="flex items-center gap-6 text-4xl max-sm:text-2xl">
         <a href="https://github.com/Ajaym1618" target="_blank"><FaGithub /></a>
-        <a href="www.linkedin.com/in/-ajay-m" target="_blank"><FaLinkedin /></a>
+        <a href="https://linkedin.com/in/-ajay-m" target="_blank"><FaLinkedin /></a>
         <a href="https://www.instagram.com/invites/contact/?igsh=1f8df7maooea8&utm_content=40j1e77" target="_blank"><FaInstagram /></a>
         </div>
       </div>
