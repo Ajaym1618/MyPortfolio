@@ -243,7 +243,7 @@ const Skills = () => {
           }
         });
       },
-      { threshold: 0.6 } // Trigger animation when 40% of the section is visible
+      { threshold:  [0.1, 0.25, 0.4] } // Trigger animation when 40% of the section is visible
     );
 
     if (skillsRef.current) {
