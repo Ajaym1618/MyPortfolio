@@ -19,6 +19,7 @@ const Main = () => {
     };
   }, []);
   return (
+    <>
     <div className="w-[100%] h-[88vh] bg-white py-4 flex max-sm:flex-col max-sm:justify-center max-sm:gap-8 max-sm:h-[85vh]" id="Home">
       <div className="w-[100%] h-full pl-32 flex flex-col gap-8 justify-center items-start text-[#0275a4] max-lg:pl-10 max-sm:py-0 max-sm:gap-4 max-sm:pl-6 max-sm:h-auto">
         <h1 className="text-5xl font-light max-lg:text-4xl">Hi,</h1>
@@ -32,17 +33,19 @@ const Main = () => {
           An expert in web design and responsive web applications!
         </p>
         <div className="flex items-center gap-6 text-4xl max-sm:text-2xl">
-        <a href="https://github.com/Ajaym1618" target="_blank"><FaGithub /></a>
-        <a href="https://linkedin.com/in/-ajay-m" target="_blank"><FaLinkedin /></a>
-        <a href="https://www.instagram.com/invites/contact/?igsh=1f8df7maooea8&utm_content=40j1e77" target="_blank"><FaInstagram /></a>
+        <a href="https://github.com/Ajaym1618" target="_blank" className="hover:text-[#c12f2f] transition-all duration-200 ease-in-out"><FaGithub /></a>
+        <a href="https://linkedin.com/in/-ajay-m" target="_blank" className="hover:text-[#c12f2f] transition-all duration-200 ease-in-out"><FaLinkedin /></a>
+        <a href="https://www.instagram.com/invites/contact/?igsh=1f8df7maooea8&utm_content=40j1e77" target="_blank" className="hover:text-[#c12f2f] transition-all duration-200 ease-in-out"><FaInstagram /></a>
         </div>
       </div>
       <div className="w-[100%] h-full flex justify-center items-center max-sm:items-start max-sm:h-auto">
         <div className="w-[70%] max-sm:w-[90%]">
-          <img src={home} alt="coding" className="w-[100%]" />
+          <img src={home} alt="coding" className="w-[100%] fade-in" />
         </div>
       </div>
     </div>
+    
+    </>
   );
 };
 
