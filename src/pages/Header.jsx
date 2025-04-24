@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Aj from "../assets/Aj.png";
+import Aj from "../assets/Aj-2.png";
 import { SiCodefactor } from "react-icons/si";
 import useScrollPosition from "../hooks/useScrollPosition";
 import ThemeToggle from "../hooks/useDarkTheme";
@@ -51,7 +51,7 @@ const Header = () => {
           <SiCodefactor />
         </div>
         <div
-          className={`w-[100%] h-[88vh] hidden text-xl font-semibold text-[#0275a4] px-8 py-6 max-sm:flex flex-col gap-6 bg-white z-10 fixed top-[72px] shadow-lg shadow-gray-500 transition-all ease-linear duration-500 dark:bg-clr-dark ${
+          className={`w-[100%] h-[88vh] hidden text-xl font-semibold text-[#0275a4] px-8 py-6 max-sm:flex flex-col gap-6 bg-white z-10 fixed top-[82px] shadow-lg shadow-gray-500 transition-all ease-linear duration-500 dark:bg-clr-dark ${
             nav === true ? "right-0" : "-right-[100%]"
           }`}
         >
