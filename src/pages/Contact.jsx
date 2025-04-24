@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import { LuUser2, LuMail } from "react-icons/lu";
 import { FaRegComment, FaCircleCheck } from "react-icons/fa6";
 import { VscSend } from "react-icons/vsc";
-import contact from "../assets/contacts.png";
+import contact from "../assets/contacts-2.png";
 
 const Contact = () => {
   // State for form data
@@ -52,12 +52,12 @@ const Contact = () => {
 
   return (
     <div
-      className="w-[100%] h-[88vh] py-4 flex max-sm:flex-col max-lg:h-auto"
+      className="w-[100%] h-[88vh] py-4 flex dark:bg-clr-dark max-sm:flex-col max-lg:h-auto"
       id="Contact"
     >
       {/* Left Section: Form */}
       <div className="w-full h-full flex flex-col items-end justify-center py-6 px-4 max-sm:items-center relative">
-        <h1 className="text-5xl text-center text-[#c12f2f] pr-24 max-lg:text-3xl mb-8">
+        <h1 className="text-5xl text-center text-clr-red  pr-24 max-lg:text-3xl mb-8">
           Contact Me
         </h1>
         <form className="w-[90%] max-w-md space-y-8" onSubmit={sendEmail}>
@@ -69,12 +69,12 @@ const Contact = () => {
               value={formData.from_name}
               onChange={handleChange}
               required
-              className="block w-full px-6 py-4 bg-transparent border-2 border-[#c12f2f] text-[#0275a4] placeholder-transparent focus:outline-none focus:ring-0 peer rounded-lg"
+              className="block w-full px-6 py-4 bg-transparent border-2 border-clr-red  text-clr-blue  placeholder-transparent focus:outline-none focus:ring-0 peer rounded-lg"
               placeholder="Your Name"
             />
             <label
               htmlFor="from_name"
-              className="absolute flex items-center left-3 top-1 text-[#c12f2f] duration-300 transform -translate-y-6 scale-75 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"
+              className="absolute flex items-center left-3 top-1 text-clr-red  duration-300 transform -translate-y-6 scale-75 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"
             >
               <LuUser2 className="mr-1" />
               Your Name
@@ -88,12 +88,12 @@ const Contact = () => {
               value={formData.user_email}
               onChange={handleChange}
               required
-              className="block w-full px-6 py-4 bg-transparent border-2 border-[#c12f2f] text-[#0275a4] placeholder-transparent focus:outline-none focus:ring-0 peer rounded-lg"
+              className="block w-full px-6 py-4 bg-transparent border-2 border-clr-red  text-clr-blue  placeholder-transparent focus:outline-none focus:ring-0 peer rounded-lg"
               placeholder="Your Mail"
             />
             <label
               htmlFor="user_email"
-              className="absolute flex items-center left-3 top-1 text-[#c12f2f] duration-300 transform -translate-y-6 scale-75 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"
+              className="absolute flex items-center left-3 top-1 text-clr-red  duration-300 transform -translate-y-6 scale-75 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"
             >
               <LuMail className="mr-1" />
               Your Mail
@@ -107,26 +107,26 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               required
-              className="block resize-none w-full px-6 py-4 bg-transparent border-2 border-[#c12f2f] text-[#0275a4] placeholder-transparent focus:outline-none focus:ring-0 peer rounded-lg"
+              className="block resize-none w-full px-6 py-4 bg-transparent border-2 border-clr-red  text-clr-blue  placeholder-transparent focus:outline-none focus:ring-0 peer rounded-lg"
               placeholder="Your Message"
             ></textarea>
             <label
               htmlFor="message"
-              className="absolute flex items-center left-3 top-1 text-[#c12f2f] duration-300 transform -translate-y-6 scale-75 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"
+              className="absolute flex items-center left-3 top-1 text-clr-red  duration-300 transform -translate-y-6 scale-75 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"
             >
               <FaRegComment className="mr-1" />
               Your Message
             </label>
           </div>
           {successMessage && (
-            <div className="text-[#0275a4] flex items-center gap-2 absolute bottom-16 right-10 max-lg:bottom-20 max-lg:left-12 max-sm:left-7">
+            <div className="text-clr-blue  flex items-center gap-2 absolute bottom-16 right-10 max-lg:bottom-20 max-lg:left-12 max-sm:left-7">
               <FaCircleCheck className="text-green-500" />
               {successMessage}
             </div>
           )}
           <button
             type="submit"
-            className="mt-4 px-8 py-3 flex items-center gap-2 border-2 border-[#c12f2f] text-[#c12f2f] rounded-full tracking-wider hover:bg-white hover:text-[#0275a4] transition-all duration-300 active:scale-95"
+            className="mt-4 px-8 py-3 flex items-center gap-2 border-2 border-clr-red  text-clr-red  rounded-full tracking-wider hover:bg-white hover:text-clr-blue  transition-all duration-300 active:scale-95"
           >
             SUBMIT <VscSend />
           </button>

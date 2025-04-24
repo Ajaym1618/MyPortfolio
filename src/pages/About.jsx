@@ -6,8 +6,8 @@ import { MdOutlineFileDownload, MdOutlineRemoveRedEye } from "react-icons/md";
 
 const About = () => {
   return (
-    <div className="w-[100%] h-[88vh] flex flex-col items-center py-8 max-xl:py-4 max-sm:h-auto max-sm:py-8" id="About">
-      <h1 className="text-5xl text-[#c12f2f] pb-4 max-lg:text-3xl">About Me</h1>
+    <div className="w-[100%] h-[88vh] flex flex-col items-center py-8 dark:bg-clr-dark max-xl:py-4 max-sm:h-auto max-sm:py-8" id="About">
+      <h1 className="text-5xl text-clr-red pb-4 max-lg:text-3xl">About Me</h1>
       <div className="w-full h-full flex max-sm:flex-col-reverse">
         <div className="w-full h-full flex flex-col justify-start items-center max-lg:w-[70%] max-lg:pt-6 max-sm:w-full max-sm:flex-row max-sm:gap-2 max-sm:px-4 max-sm:justify-center">
           <div className="w-[300px] max-lg:w-[200px] max-sm:pt-4 max-sm:w-[150px]">
@@ -17,21 +17,21 @@ const About = () => {
             <a
               href={resume}
               target="_blank"
-              className="flex items-center justify-center gap-2 py-2 px-4 bg-[#c12f2f] text-white border-2 border-[#c12f2f] rounded-md transition-all ease-linear duration-150 hover:text-[#0275a4] hover:bg-white hover:border-[#0275a4] max-sm:hidden"
+              className="flex items-center justify-center gap-2 py-2 px-4 bg-clr-red text-white border-2 border-clr-red rounded-md transition-all ease-linear duration-150 hover:text-clr-blue  hover:bg-white hover:border-clr-blue  max-sm:hidden"
             >
               <MdOutlineRemoveRedEye className="text-lg"/>View CV
             </a>
             <a
               href={resume}
               download={"Ajay.M-resume.pdf"}
-              className="flex justify-center items-center gap-2 py-2 px-4 bg-[#c12f2f] text-white border-2 border-[#c12f2f] rounded-md transition-all ease-linear duration-150 hover:text-[#0275a4] hover:bg-white hover:border-[#0275a4] max-sm:px-3 max-sm:py-2 max-sm:text-sm"
+              className="flex justify-center items-center gap-2 py-2 px-4 bg-clr-red text-white border-2 border-clr-red rounded-md transition-all ease-linear duration-150 hover:text-clr-blue  hover:bg-white hover:border-clr-blue  max-sm:px-3 max-sm:py-2 max-sm:text-sm"
             >
               <MdOutlineFileDownload className="max-sm:hidden"/>Download CV
             </a>
           </div>
         </div>
         <div className="w-full h-full flex items-center">
-          <div className="w-[90%] text-2xl text-[#0275a4] flex flex-col gap-5 justify-center pr-6 max-xl:text-xl max-xl:items-center max-lg:text-lg max-lg:gap-2 max-lg:w-full max-sm:px-4 max-sm:text-[16px] max-sm:pt-4">
+          <div className="w-[90%] text-2xl text-clr-blue  flex flex-col gap-5 justify-center pr-6 max-xl:text-xl max-xl:items-center max-lg:text-lg max-lg:gap-2 max-lg:w-full max-sm:px-4 max-sm:text-[16px] max-sm:pt-4">
             <p className="indent-6">
               I am a full-stack web developer with a strong foundation in
               Computer Science and Engineering, specializing in MERN stack

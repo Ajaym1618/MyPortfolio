@@ -11,11 +11,11 @@
 // const Skills = () => {
 //   return (
 //     <div className="w-[100%] h-[88vh] py-12 max-lg:h-auto" id="Skills">
-//       <h1 className="w-full text-[#c12f2f] text-5xl text-center max-lg:text-4xl">Skills</h1>
+//       <h1 className="w-full text-clr-red  text-5xl text-center max-lg:text-4xl">Skills</h1>
 //       <div className="w-full h-full flex py-4 max-lg:flex-col">
 //         <div className="w-full h-full flex flex-col justify-center items-center gap-4 px-6 max-lg:px-2">
 //           <h1 className="w-full text-center pt-4 text-3xl text-[#0275a4] font-semibold max-sm:text">
-//             <span className="max-w-fit min-w-fit border-b-2 border-[#c12f2f] border-dashed">FrontEnd</span>
+//             <span className="max-w-fit min-w-fit border-b-2 border-clr-red  border-dashed">FrontEnd</span>
 //           </h1>
 //           {/* html */}
 //           <div className="w-[80%] py-1 px-3 flex flex-col gap-5 rounded-lg shadow-lg shadow-slate-500 max-sm:w-full">
@@ -101,7 +101,7 @@
 //         {/* frameworks */}
 //         <div className="w-full pt-4 flex flex-col items-center gap-4 px-6 rounded-lg max-lg:px-2">
 //           <h1 className="w-full text-center pt-4 text-3xl text-[#0275a4] font-semibold">
-//           <span className="max-w-fit min-w-fit border-b-2 border-[#c12f2f] border-dashed">Framework</span>
+//           <span className="max-w-fit min-w-fit border-b-2 border-clr-red  border-dashed">Framework</span>
 //           </h1>
 //           <div
 //             className="w-[80%] flex py-3 px-3 rounded-md bg-white hover:bg-[#f0f0f0] hover:scale-110 duration-150 transition-all ease-in-out cursor-pointer shadow-lg shadow-slate-500 max-sm:w-full"
@@ -124,7 +124,7 @@
 //         {/* backend */}
 //         <div className="w-full h-full flex flex-col items-center gap-4 pt-4 px-6 max-lg:px-2">
 //           <h1 className="w-full text-center pt-4 text-3xl text-[#0275a4] font-semibold">
-//           <span className="max-w-fit min-w-fit border-b-2 border-[#c12f2f] border-dashed">BackEnd</span>
+//           <span className="max-w-fit min-w-fit border-b-2 border-clr-red  border-dashed">BackEnd</span>
 //           </h1>
 //           {/* node */}
 //           <div className="w-[80%] py-1 px-3 flex flex-col gap-5 rounded-lg shadow-lg shadow-slate-500 max-sm:w-full">
@@ -193,7 +193,6 @@
 
 
 import React, { useEffect, useRef, useState } from "react";
-// Import images
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/javascript.png";
@@ -259,18 +258,18 @@ const Skills = () => {
 
   return (
     <div
-      className="w-[100%] h-[88vh] py-12 max-lg:h-auto"
+      className="w-[100%] h-[88vh] py-12 dark:bg-clr-dark max-lg:h-auto"
       id="Skills"
       ref={skillsRef}
     >
-      <h1 className="w-full text-[#c12f2f] text-5xl text-center max-lg:text-4xl">
+      <h1 className="w-full text-clr-red  text-5xl text-center max-lg:text-4xl">
         Skills
       </h1>
       <div className="w-full h-full flex py-4 max-lg:flex-col">
         {/* FrontEnd */}
         <div className="w-full h-full flex flex-col justify-center items-center gap-4 px-6 max-lg:px-2">
           <h1 className="w-full text-center pt-4 text-3xl text-[#0275a4] font-semibold max-sm:text">
-            <span className="max-w-fit min-w-fit border-b-2 border-[#c12f2f] border-dashed">
+            <span className="max-w-fit min-w-fit border-b-2 border-clr-red  border-dashed">
               FrontEnd
             </span>
           </h1>
@@ -394,7 +393,7 @@ const Skills = () => {
         {/* Frameworks */}
         <div className="w-full pt-4 flex flex-col items-center gap-4 px-6 rounded-lg max-lg:px-2">
           <h1 className="w-full text-center pt-4 text-3xl text-[#0275a4] font-semibold">
-            <span className="max-w-fit min-w-fit border-b-2 border-[#c12f2f] border-dashed">
+            <span className="max-w-fit min-w-fit border-b-2 border-clr-red  border-dashed">
               Framework
             </span>
           </h1>
@@ -428,7 +427,7 @@ const Skills = () => {
         {/* Backend */}
         <div className="w-full h-full flex flex-col items-center gap-4 pt-4 px-6 max-lg:px-2">
           <h1 className="w-full text-center pt-4 text-3xl text-[#0275a4] font-semibold">
-            <span className="max-w-fit min-w-fit border-b-2 border-[#c12f2f] border-dashed">
+            <span className="max-w-fit min-w-fit border-b-2 border-clr-red  border-dashed">
               BackEnd
             </span>
           </h1>

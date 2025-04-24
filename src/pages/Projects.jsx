@@ -110,7 +110,7 @@
 //       id="Projects"
 //     >
 //       <div className="w-full px-4 max-sm:px-0">
-//         <h1 className="text-5xl text-center mb-8 text-[#c12f2f] max-lg:text-3xl">
+//         <h1 className="text-5xl text-center mb-8 text-clr-red  max-lg:text-3xl">
 //           My Projects
 //         </h1>
 //         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -127,15 +127,15 @@
 //                 />
 //               </div>
 //               <div className="py-6 px-6">
-//                 <h3 className="text-2xl font-semibold mb-2 text-[#c12f2f]">
+//                 <h3 className="text-2xl font-semibold mb-2 text-clr-red ">
 //                   {project.title}
 //                 </h3>
-//                 <p className="text-[#0275a4] mb-4">{project.description}</p>
+//                 <p className="text-clr-blue  mb-4">{project.description}</p>
 //                 <div className="flex flex-wrap gap-2 mb-4">
 //                   {project.technologies.map((tech, index) => (
 //                     <span
 //                       key={index}
-//                       className="bg-[#c12f2f] text-white text-xs font-medium px-2 py-1 rounded"
+//                       className="bg-clr-red  text-white text-xs font-medium px-2 py-1 rounded"
 //                     >
 //                       {tech}
 //                     </span>
@@ -146,7 +146,7 @@
 //                     href={project.liveLink}
 //                     target="_blank"
 //                     rel="noopener noreferrer"
-//                     className="px-3 py-1 text-white border-2 border-[#0275a4] bg-[#0275a4] rounded-md  transition-all duration-300 ease-linear hover:text-[#0275a4] hover:bg-white active:text-[#c12f2f] active:border-[#c12f2f]"
+//                     className="px-3 py-1 text-white border-2 border-clr-blue  bg-clr-blue  rounded-md  transition-all duration-300 ease-linear hover:text-clr-blue  hover:bg-white active:text-clr-red  active:border-clr-red "
 //                   >
 //                     Live Demo
 //                   </a>
@@ -154,7 +154,7 @@
 //                     href={project.githubLink}
 //                     target="_blank"
 //                     rel="noopener noreferrer"
-//                     className="px-3 py-1 text-white border-2 border-[#0275a4] bg-[#0275a4] rounded-md transition-all duration-300 ease-linear hover:text-[#0275a4] hover:bg-white active:text-[#c12f2f] active:border-[#c12f2f]"
+//                     className="px-3 py-1 text-white border-2 border-clr-blue  bg-clr-blue  rounded-md transition-all duration-300 ease-linear hover:text-clr-blue  hover:bg-white active:text-clr-red  active:border-clr-red "
 //                   >
 //                     GitHub
 //                   </a>
@@ -303,11 +303,11 @@ const Projects = () => {
 
   return (
     <section
-      className="w-[100%] h-[88vh] py-12 px-6 max-xl:h-auto max-sm:px-2"
+      className="w-[100%] h-[88vh] py-12 px-6 dark:bg-clr-dark max-xl:h-auto max-sm:px-2"
       id="Projects"
     >
       <div className="w-full px-4 max-sm:px-0">
-        <h1 className="text-5xl text-center mb-8 text-[#c12f2f] max-lg:text-3xl">
+        <h1 className="text-5xl text-center mb-8 text-clr-red  max-lg:text-3xl">
           My Projects
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -333,15 +333,15 @@ const Projects = () => {
                 </div>
               </div>
               <div className="py-6 px-6">
-                <h3 className="text-2xl font-semibold mb-2 text-[#c12f2f]">
+                <h3 className="text-2xl font-semibold mb-2 text-clr-red ">
                   {project.title}
                 </h3>
-                <p className="text-[#0275a4] mb-4">{project.description}</p>
+                <p className="text-clr-blue  mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, index) => (
                     <span
                       key={index}
-                      className="bg-[#c12f2f] text-white text-xs font-medium px-2 py-1 rounded"
+                      className="bg-clr-red  text-white text-xs font-medium px-2 py-1 rounded"
                     >
                       {tech}
                     </span>
@@ -352,7 +352,7 @@ const Projects = () => {
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3 py-1 text-white border-2 border-[#0275a4] bg-[#0275a4] rounded-md  transition-all duration-300 ease-linear hover:text-[#0275a4] hover:bg-white active:text-[#c12f2f] active:border-[#c12f2f]"
+                    className="px-3 py-1 text-white border-2 border-clr-blue  bg-clr-blue  rounded-md  transition-all duration-300 ease-linear hover:text-clr-blue  hover:bg-white active:text-clr-red  active:border-clr-red "
                   >
                     Live Demo
                   </a>
@@ -360,7 +360,7 @@ const Projects = () => {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3 py-1 text-white border-2 border-[#0275a4] bg-[#0275a4] rounded-md transition-all duration-300 ease-linear hover:text-[#0275a4] hover:bg-white active:text-[#c12f2f] active:border-[#c12f2f]"
+                    className="px-3 py-1 text-white border-2 border-clr-blue  bg-clr-blue  rounded-md transition-all duration-300 ease-linear hover:text-clr-blue  hover:bg-white active:text-clr-red  active:border-clr-red "
                   >
                     GitHub
                   </a>
