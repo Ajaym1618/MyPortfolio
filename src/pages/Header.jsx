@@ -8,7 +8,7 @@ import { LiaHandPointLeftSolid } from "react-icons/lia";
 import { Link } from "react-scroll";
 
 const Header = () => {
-  const activeSection = ""
+  const activeSection = useScrollPosition();
   const [nav, setNav] = useState(false);
 
   return (
